@@ -31,7 +31,7 @@ namespace ViveSR
 
                     Vector3 GazeDirectionCombinedC = Camera.main.transform.TransformDirection(GazeDirectionCombinedLocalC);
                     RaycastHit hit;
-                    Physics.Raycast(Camera.main.transform.position+GazeOriginCombinedLocalC, Camera.main.transform.position+GazeDirectionCombinedC,out hit);
+                    Physics.Raycast(Camera.main.transform.position+GazeOriginCombinedLocalC, Camera.main.transform.position+GazeDirectionCombinedC*20,out hit);
 
                     SRanipal_Eye.Focus(GazeIndex.COMBINE, out ray, out focusinfo);
 
