@@ -45,6 +45,10 @@ namespace ViveSR
                         string str2 = string.Join(",", str);
                         sw.WriteLine(str2);
                     }
+                   if (Input.GetKeyDown(KeyCode.F))
+                    {
+                        sw.Close();
+                    }
                 }
             }
         }
